@@ -17,8 +17,9 @@ body {
   width: 380px;
   height: 480px;
   background: #fff;
-  border-radius: 4px;
+  border-radius: 10%;
   overflow: hidden;
+  box-shadow: 10px 10px 5px #f0eeee;
 }
 
 .form {
@@ -89,6 +90,13 @@ body {
   cursor: pointer;
 }
 
+.kirim input:focus,
+.buat input:focus {
+  background-color: #fff;
+  color: #f831a8;
+  outline: 4px solid #f0eeee;
+}
+
 .buat input {
   position: relative;
   background-color: transparent;
@@ -116,6 +124,11 @@ body {
   cursor: pointer;
 }
 
+.Facebook input:active {
+  color: #fff;
+  background-color: #0b0bad;
+}
+
 .Google input {
   border: 1px solid;
   border-color: #c7c5c5;
@@ -124,6 +137,12 @@ body {
   height: 30px;
   cursor: pointer;
 }
+
+.Google input:active {
+  color: #fff;
+  background-color: #000;
+}
+
 .member p {
   text-align: center;
   padding: 15px;
@@ -136,13 +155,13 @@ body {
 /* laptop */
 @media (max-width: 1366px) {
   body {
-    width: 100%;
+    font-size: 100%;
   }
 }
 
 /* tablet */
 @media (max-width: 758px) {
   body {
-    width: 62%;
+    font-size: 62%;
   }
 }
